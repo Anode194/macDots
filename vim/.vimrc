@@ -6,9 +6,10 @@ set shiftwidth=4
 
 set expandtab
 
-set relativenumber
-
+set number
+let g:airline_theme='base16'
 call plug#begin('~/.vim/plugged')
+Plug '/usr/local/opt/fzf'
 
 Plug 'altercation/vim-colors-solarized'
 
@@ -18,5 +19,12 @@ Plug 'tpope/vim-surround'
 
 Plug 'godlygeek/tabular'
 
+Plug 'airblade/vim-gitgutter'
+
+Plug 'vim-airline/vim-airline'
+
+Plug 'vim-airline/vim-airline-themes'
+
+Plug 'junegunn/goyo.vim'
 call plug#end()
 

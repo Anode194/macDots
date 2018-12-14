@@ -2,7 +2,7 @@
 cmd + alt + ctrl - r : khd -e "reload"
 
 # open terminal, blazingly fast compared to iTerm/Hyper
-cmd - return : open -na Users/jordanphillips/iTerm.app/Contents/MacOS/iTerm2
+cmd - return : open -na Users/jordanphillips/Applications/iTerm.app/Contents/MacOS/iTerm2
 
 # focus window
 alt - h : chunkc tiling::window --focus west
@@ -67,8 +67,8 @@ shift + cmd - 6 : chunkc tiling::window -d 6; khd -p "cmd + alt - 6"
 cmd + alt - x   : `id=$(chunkc get _last_active_desktop); khd -p "cmd + alt - $id" &> /dev/null`
 
 # focus monitor
-ctrl + alt - z  : chunkc tiling::monitor -f prev
-ctrl + alt - c  : chunkc tiling::monitor -f next
+shift + tab   : chunkc tiling::monitor -f prev
+ctrl + shift - tab : chunkc tiling::monitor -f next
 ctrl + alt - 1  : chunkc tiling::monitor -f 1
 ctrl + alt - 2  : chunkc tiling::monitor -f 2
 ctrl + alt - 3  : chunkc tiling::monitor -f 3
@@ -143,7 +143,7 @@ ctrl + alt - w : chunkc tiling::desktop --deserialize ~/.chunkwm_layouts/dev_1
 
 # remap caps-lock to escape for this config only !!!
 # macos sierra can also perform this remap for a given keyboard
-- capslock : khd -p "- escape"
+#- capslock : khd -p "- escape"
 
 # key remap for norwegian layout \ { }
 cmd - 7 : khd -p "shift + alt - 7"
